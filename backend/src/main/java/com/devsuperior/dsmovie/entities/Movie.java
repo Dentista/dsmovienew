@@ -9,16 +9,16 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tb_movie")
 public class Movie {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
+	@Id
+	@GeneratedValue(strategy =  GenerationType.IDENTITY)
 	private Long id;
 	private String title;
 	private Double score;
 	private Integer count;
 	private String image;
 	
-	public Movie() {
+	public Movie () {
 	}
 
 	public Movie(Long id, String title, Double score, Integer count, String image) {
@@ -70,5 +70,4 @@ public class Movie {
 	}
 	
 	
-
 }
